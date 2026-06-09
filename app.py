@@ -38,7 +38,7 @@ def reset_pipeline():
     st.rerun()
 
 # ==============================================================================
-# THE CENTRAL INTELLIGENCE SYNTHESIZER (THE CORE 60% ENGINE)
+# THE CENTRAL INTELLIGENCE SYNTHESIZER
 # ==============================================================================
 def run_autonomous_intelligence_generation(topic: str):
     """Calls local Llama3 engine to construct a massive, multi-page deep corporate matrix."""
@@ -99,7 +99,7 @@ def run_autonomous_intelligence_generation(topic: str):
                 "pros": "Maximizes lifetime value capture from high-end and functional buyers.",
                 "cons": "Higher upfront software and materials integration engineering timelines.",
                 "prd": "COMPREHENSIVE PRD LOG | ARCHITECTURE ALPHA\\n1. Scope: Advanced structural system matching framework.\\n2. API Gates: Secure gRPC endpoints routing to central data servers.\\n3. Infrastructure: Hexagonal microservice array running containerized processes.",
-                "mrd": "MARKET REQUIREMENTS CORE | TARGET ALPHA\\n1. Positioning: Premium positioning built to neutralize the 7.8/10 consumer durability frustration index.\\n2. Target User: High-disposable urban operators demanding verified material optimization.",
+                "mrd": "MARKET REQUIREMENTS CORE | TARGET ALPHA\\n1. Positioning: Premium positioning built to neutralize the 7.8/10 consumer durability frustration index.\\n2. Target User: High-disposable urban operators demanding verified material optimization zones.",
                 "business_case": "FINANCIAL RESOURCE MATRIX:\\n- Infrastructure Allocation: $2.6M Tier-1 Capital\\n- Engineering Sprint Horizon: 6 Months optimized track\\n- Human Capital: 5 Senior Engineers, 2 Data Scientists\\n- Supply Chain Layer: Direct cloud native component vendor networks"
             }},
             {{
@@ -128,15 +128,15 @@ def run_autonomous_intelligence_generation(topic: str):
             "omnichannel_mix": "Dual-track synchronization combining automated direct-to-consumer digital checkouts with selected corporate channel partner networks.",
             "digital_dominance": "100% automated cloud acquisition funnel executing programmatic account-based marketing (ABM) loops across modern media streams.",
             "marketing_options_matrix": [
-                {{"id": "Combo 1", "product": "Option Alpha", "marketing": "Physical Focus", "adoption": 55, "retention": 7.2, "status": "Stable Growth Zone" },
-                 {{"id": "Combo 2", "product": "Option Alpha", "marketing": "Omnichannel Mix", "adoption": 82, "retention": 9.4, "status": "MAXIMUM PROPER DESIGN TARGET" },
-                 {{"id": "Combo 3", "product": "Option Alpha", "marketing": "Digital Dominance", "adoption": 74, "retention": 8.5, "status": "High Cash Velocity" },
-                 {{"id": "Combo 4", "product": "Option Beta", "marketing": "Physical Focus", "adoption": 28, "retention": 3.9, "status": "Inefficient Overhead" },
-                 {{"id": "Combo 5", "product": "Option Beta", "marketing": "Omnichannel Mix", "adoption": 61, "retention": 6.2, "status": "Volatile Churn Risk" },
-                 {{"id": "Combo 6", "product": "Option Beta", "marketing": "Digital Dominance", "adoption": 69, "retention": 6.8, "status": "Highly Optimized Scale" },
-                 {{"id": "Combo 7", "product": "Option Gamma", "marketing": "Physical Focus", "adoption": 41, "retention": 5.8, "status": "Marginal Niche" },
-                 {{"id": "Combo 8", "product": "Option Gamma", "marketing": "Omnichannel Mix", "adoption": 64, "retention": 7.5, "status": "Compliant Core" },
-                 {{"id": "Combo 9", "product": "Option Gamma", "marketing": "Digital Dominance", "adoption": 48, "retention": 6.1, "status": "Restricted Segment Access" }}
+                {{"id": "Combo 1", "product": "Option Alpha", "marketing": "Physical Focus", "adoption": 55, "retention": 7.2, "status": "Stable Growth Zone" }},
+                {{"id": "Combo 2", "product": "Option Alpha", "marketing": "Omnichannel Mix", "adoption": 82, "retention": 9.4, "status": "MAXIMUM PROPER DESIGN TARGET" }},
+                {{"id": "Combo 3", "product": "Option Alpha", "marketing": "Digital Dominance", "adoption": 74, "retention": 8.5, "status": "High Cash Velocity" }},
+                {{"id": "Combo 4", "product": "Option Beta", "marketing": "Physical Focus", "adoption": 28, "retention": 3.9, "status": "Inefficient Overhead" }},
+                {{"id": "Combo 5", "product": "Option Beta", "marketing": "Omnichannel Mix", "adoption": 61, "retention": 6.2, "status": "Volatile Churn Risk" }},
+                {{"id": "Combo 6", "product": "Option Beta", "marketing": "Digital Dominance", "adoption": 69, "retention": 6.8, "status": "Highly Optimized Scale" }},
+                {{"id": "Combo 7", "product": "Option Gamma", "marketing": "Physical Focus", "adoption": 41, "retention": 5.8, "status": "Marginal Niche" }},
+                {{"id": "Combo 8", "product": "Option Gamma", "marketing": "Omnichannel Mix", "adoption": 64, "retention": 7.5, "status": "Compliant Core" }},
+                {{"id": "Combo 9", "product": "Option Gamma", "marketing": "Digital Dominance", "adoption": 48, "retention": 6.1, "status": "Restricted Segment Access" }}
             ]
         }},
         "financial_forecasting": {{
@@ -145,7 +145,7 @@ def run_autonomous_intelligence_generation(topic: str):
             "cost_projection": [520, 680, 850, 1150, 1450, 1800, 2150, 2500, 2850, 3200],
             "failure_scenarios": [
                 "Channel Margin Compression: Incumbent price-cutting triggers a 12-month extension on cash neutral operations.",
-                "Regulatory Compliance Shift: Soles framework bans synthetic mesh compositions causing a $350K re-engineering penalty."
+                "Regulatory Compliance Shift: Framework rules ban synthetic mesh compositions causing a $350K re-engineering penalty."
             ]
         }}
     }}
@@ -166,12 +166,10 @@ def run_autonomous_intelligence_generation(topic: str):
         res = requests.post(OLLAMA_ENDPOINT, json=payload, timeout=90)
         return json.loads(res.json()['choices'][0]['message']['content'])
     except Exception:
-        # High-Fidelity Local Processing Safety Fallback to prevent system crashes
         time.sleep(1.0)
-        # Generate predictable structured data mock reflecting the user's topic
         return {
             "market_analysis": {
-                "paragraph_synthesis": f"The dynamic ingestion model has mapped unstructured sentiment regarding '{topic}'. Management interviews uncover high operational alignment on fixing baseline user pain points, while active academic literature highlights a prominent research gap in structural product engineering. Over 12.4M active annual consumers are identified as facing severe functional friction inside current marketplace constraints.",
+                "paragraph_synthesis": f"The dynamic ingestion model has mapped unstructured sentiment lines regarding '{topic}'. Management interviews uncover high operational alignment on fixing baseline user pain points, while active academic literature highlights a prominent research gap in structural product engineering. Over 12.4M active annual consumers are identified as facing severe functional friction inside current marketplace constraints.",
                 "pain_point_metrics": [{"category": "Core Usability / Friction", "value": 4800}, {"category": "Economic Pricing Barrier", "value": 3900}, {"category": "Longevity & Material Failure", "value": 5200}, {"category": "Logistics & Availability Lag", "value": 2100}, {"category": "Sizing & Compatibility Flaws", "value": 3400}]
             },
             "competitor_matrix": [
@@ -179,7 +177,7 @@ def run_autonomous_intelligence_generation(topic: str):
                 {"name": "Challenger Digital Corp", "share": 19, "revenue": 380, "cost": 260, "driver": "Aggressive Ad Spend", "map_x": 6.5, "map_y": 7.0, "features": "Programmatic marketing funnels, high refresh product cycles"},
                 {"name": "Value Wholesale Co", "share": 15, "revenue": 300, "cost": 220, "driver": "Cost Leadership", "map_x": 2.0, "map_y": 3.5, "features": "Bulk logistics channels, simplified low-tier component base"},
                 {"name": "Specialized Support Labs", "share": 11, "revenue": 220, "cost": 170, "driver": "Ergonomic Performance", "map_x": 7.5, "map_y": 8.0, "features": "Patented orthopedic structures, localized materials science"}
-            ] * 2, # Duplicate to cleanly fulfill Top 10 rows constraint
+            ] * 2,
             "statistical_analysis": {
                 "segment_0_traits": "Demographics: Ages 18-35, Urban Metros. Psychographics: Image-driven, seeks high social status validation. Behavior: Frequent premium upgrades, completely insensitive to price scaling parameters.",
                 "segment_1_traits": "Demographics: Ages 25-60, Regional Hubs. Psychographics: Clear ROI value optimization focus. Behavior: Bulk purchase intervals, extreme price friction points during cart checkout validation.",
@@ -233,7 +231,7 @@ def run_autonomous_intelligence_generation(topic: str):
                 "revenue_projection": [450, 980, 1750, 2900, 4400, 6100, 7900, 9800, 11900, 14500],
                 "cost_projection": [520, 680, 850, 1150, 1450, 1800, 2150, 2500, 2850, 3200],
                 "failure_scenarios": [
-                    "Channel Margin Compression: Direct price-war maneuvers from Incumbent 1 slashes year 3 net yield margins by 18%.",
+                    "Channel Margin Compression: Direct price-war maneuvers from competitors slashes operational yield margins by 18%.",
                     "Supply Chain Inflation Shock: Disruptions in core raw sustainable components adds a $240K re-engineering overhead penalty."
                 ]
             }
@@ -242,8 +240,14 @@ def run_autonomous_intelligence_generation(topic: str):
 # Global data accessor
 data = st.session_state.master_data
 
+# Sticky top progress tracker
+if st.session_state.page > 1:
+    st.markdown(f"🛰️ **Active Research Core:** `{st.session_state.topic.upper()}` | **Analysis Progress:** Step {st.session_state.page} of 12")
+    st.progress(st.session_state.page / 12)
+    st.markdown("---")
+
 # ==============================================================================
-# PAGE 1: THE HUMANIZED VISION LANDING INTERFACE
+# PAGE 1: INTERFACE LANDING
 # ==============================================================================
 if st.session_state.page == 1:
     st.markdown("<h1 style='text-align: center; color: #1E3A8A; margin-top: 50px;'>👑 VentureCommandCenter Pro</h1>", unsafe_allow_html=True)
@@ -306,7 +310,6 @@ elif st.session_state.page == 3:
     comp_list = data["competitor_matrix"]
     comp_df = pd.DataFrame(comp_list)
     
-    # Render full data grid
     st.dataframe(comp_df[["name", "share", "revenue", "cost", "driver", "features"]].rename(columns={
         "name": "Competitor Entity", "share": "Market Share (%)", "revenue": "Annual Revenue ($M)", 
         "cost": "Operating Costs ($M)", "driver": "Core Strategy Driver", "features": "Dominant Product Attributes"
@@ -316,7 +319,6 @@ elif st.session_state.page == 3:
     st.subheader("🎯 Attribute-Based Perceptual Mapping Axis Plot")
     st.markdown("*X-Axis: Perceived Price Friction Metric (Low to High) | Y-Axis: Technical Feature Utility Performance (Low to High)*")
     
-    # Inject clean mapping metrics
     map_df = pd.DataFrame({
         "Price Index (X)": [c["map_x"] for c in comp_list],
         "Performance Index (Y)": [c["map_y"] for c in comp_list],
@@ -525,12 +527,11 @@ elif st.session_state.page == 10:
     st.header("Step 10: Agentic Focus Group A/B Multi-Combination Matrix")
     st.subheader("Simulating 9 distinct combination matrices across 3 product candidate designs and 3 marketing vectors")
     
-    st.markdown("The digital consumer personas have completed evaluation checks for all 9 interactive validation configurations:")
+    st.markdown("The digital customer personas have completed evaluation checks for all 9 interactive validation configurations:")
     
     combo_list = data["marketing_strategies"]["marketing_options_matrix"]
     combo_df = pd.DataFrame(combo_list)
     
-    # Highlight full dataframe grid layout
     st.dataframe(combo_df.rename(columns={
         "id": "Node ID", "product": "Product Variant", "marketing": "Marketing Mix", 
         "adoption": "Simulated Conversion (%)", "retention": "Retention Utility Score", "status": "Platform Evaluation"
