@@ -1,10 +1,15 @@
 beautifulsoup4
 requests
 pandas
-numpy
 scikit-learn
 scipy
 sentence-transformers
 SQLAlchemy
 psycopg2-binary
 pgvector
+streamlit
+openpyxl
+pdfplumber
+chromadb
+pysqlite3-binary
+numpy
